@@ -2,16 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hoodie's Portfolio</title>
-  <meta name="description" content="Portfolio for Hoodie">
+  <meta 
+    name="description" 
+    content="Portfolio for Hoodie" />
   <meta name="author" content="Hoodie" />
   <link rel="icon" type="image/png" href="imgs/hoodie.png" />
-  <script 
-    src="https://kit.fontawesome.com/a90ec94be3.js" 
-    crossorigin="anonymous">
-  </script>
+  <script src="https://kit.fontawesome.com/a90ec94be3.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
@@ -23,28 +21,170 @@
   <nav id="navbar">
     <div class="navbar__logo">
       <i class="fab fa-diaspora"></i>
-      <a href="#">Ellie</a>
+      <a href="#">Hoodie</a>
     </div>
-    <div class="navbar__menu">
-      <ul class="navbar__menu">
-        <li class="navbar__menu__item">Home</li>
-        <li class="navbar__menu__item">About</li>
-        <li class="navbar__menu__item">Skills</li>
-        <li class="navbar__menu__item">My Work</li>
-        <li class="navbar__menu__item">Testimonial</li>
-        <li class="navbar__menu__item">Contact</li>
+    <ul class="navbar__menu">
+      <li class="navbar__menu__item">Home</li>
+      <li class="navbar__menu__item">About</li>
+      <li class="navbar__menu__item">Skills</li>
+      <li class="navbar__menu__item">My Work</li>
+      <li class="navbar__menu__item">Testimonial</li>
+      <li class="navbar__menu__item">Contact</li>
       </ul>
-    </div>
   </nav>
+  <!--Home-->
+  <Section id="home">
+    <img 
+      src="imgs/profile.png" 
+      alt="Hoodie's profile" 
+      class="home__avatar"
+      />
+      <h1 class="home_title">Hello, <br />I'm Hoodie</h1>
+      <h2 class="home_description"></h2>
+      <button class="home__contact">Conatact Me</button>
+
+  </Section>
   <!--About-->
-  <section id="about"></section>
+  <section id="about" class="section section__container">
+    <h1>About me</h1>
+    <p>
+      main text
+    </p>
+    <div class="about__majors">
+      <div class="major">
+        <div class="major__icon">
+          <i class="fab fa-html5"></i>
+        </div>
+      <div class="major__title">HTML</div>
+      <div class="major__description">
+
+      </div>
+    </div>
+    <div class="about__jobs">
+      <div class="job">
+        <div class="major__icon">
+          <i class="fa-brands fa-css3"></i>
+        </div>
+      <h2 class="major__title">CSS</h2>
+      <p class="major__description">
+
+      </p>
+    </div>
+    <div class="major">
+      <div class="major__icon">
+        <div class="major__icon">
+          <i class="fa-brands fa-js"></i>
+        </div>
+      <h2 class="major__title">JavaScript</h2>
+      <p class="major__description">
+
+      </p>
+    </div>
+  </div>
+  <div class="about__jobs">
+    <div class="job">
+      <img
+        src="imgs/jobs/logo-samsung.png"
+        alt="samsung"
+        class="job_logo"
+      />
+    <div class="job__description">
+      <p class="job__name">
+
+      </p>
+      <p class="job__period"></p>
+    </div>
+  </div>
+  </section>
+
   <!--Skills-->
-  <section id="skills"></section>
+  <section id="skills" class="section">
+    <div class="section__container"></div>
+      <h1>Skills</h1>
+      <h2>Skills & Attribute</h2>
+      <p>
+      skill
+      </p>
+    <div class="skillset">
+      <div class="skillset__left">
+        <h3 class="Skillset__title">Skills</h3>
+        <div class="Skill">
+          <div class="skill_description">
+            <span>HTML</span>
+            <span>99%</span>
+          </div>
+          <div class="skill_bar">
+            <div class="skill_value"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="skill__description">
+            <span>CSS</span>
+            <span>90%</span>
+          </div>
+          <div class="skill__bar">
+            <div class="skill__value" style=""></div>
+          </div>
+          <div class="tools">
+          </div>
+          <div class="etc">
+          <h3 class="Skillset_title">Etc</h3>
+          <ul class="etc__list">
+            <li><span>Git</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
   <!--Work-->
-  <section id="work"></section>
+  <section id="work">
+    <h1>My work</h1>
+    <h3>Projects</h3>
+    <div class="work__categories">
+      <button class="category__btn">All<span class="category__count">8</span></button>
+      <button class="category__btn">Front-end<span class="category__count">3</span></button>
+      <button class="category__btn">Back-end<span class="category__count">3</span></button>
+      <button class="category__btn">Mobile<span class="category__count">2</span></button>
+    </div>
+  </section>  
+
+    <div class="work__projects">
+      <a
+        href="https://github.com/"
+        class="project__img"
+        data-type="backend"
+      >
+      <img src="imgs/projects/youtube.png" alt="Yotube">
+      <div class="project__description">
+        <h3>Youtube Site</h3>
+        <span>Clone coding with HTML and CSS</span>
+      </div>
+    </a>
+    </div>
+  </section>
+
+  </body>
   <!--Testimonials-->
-  <section id="testimonials"></section>
-  <!--COntact-->
+  <section id="testimonials">
+    <h1>Testimonial</h1>
+    <h3>See what they say about me</h3>
+    <div class="testimonials">
+      <div class="testimonial">
+        <img
+          src="imgs/testimonial/people1.jpg"
+          alt="people"
+          class="testimonial__avatar"
+        />
+      <div class="testimonial__speech-bubble">
+        <p>
+
+        </p>
+        <p class="name"></p>
+      </div>
+    </div>
+  </div>
+  </section>
+  <!--Contact-->
   <section id="contact"></section>
 </body>
 </html>
