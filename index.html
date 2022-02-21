@@ -28,7 +28,6 @@
       <li class="navbar__menu__item">About</li>
       <li class="navbar__menu__item">Skills</li>
       <li class="navbar__menu__item">My Work</li>
-      <li class="navbar__menu__item">Testimonial</li>
       <li class="navbar__menu__item">Contact</li>
       </ul>
   </nav>
@@ -109,24 +108,35 @@
       <div class="skillset__left">
         <h3 class="Skillset__title">Skills</h3>
         <div class="Skill">
-          <div class="skill_description">
+          <div class="skill__description">
             <span>HTML</span>
-            <span>99%</span>
+            <span>90%</span>
           </div>
-          <div class="skill_bar">
-            <div class="skill_value"></div>
+          <div class="skill__bar">
+            <div class="skill__value" style="width: 90%;"></div>
           </div>
-        </div>
+          <div class="tools">
+          </div>
         <div class="skill">
           <div class="skill__description">
             <span>CSS</span>
             <span>90%</span>
           </div>
           <div class="skill__bar">
-            <div class="skill__value" style=""></div>
+            <div class="skill__value" style="width: 90%"></div>
           </div>
           <div class="tools">
           </div>
+          <div class="Skill">
+            <div class="skill__description">
+              <span>JavaScript</span>
+              <span>50%</span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value" style="width: 90%;"></div>
+            </div>
+            <div class="tools">
+            </div>
           <div class="etc">
           <h3 class="Skillset_title">Etc</h3>
           <ul class="etc__list">
@@ -136,15 +146,17 @@
       </div>
     </div>
   </section>
+
   <!--Work-->
-  <section id="work">
-    <h1>My work</h1>
+  <section id="work" class="section">
+    <div class="sectio_container">
+      <h1>My work</h1>
     <h3>Projects</h3>
     <div class="work__categories">
-      <button class="category__btn">All<span class="category__count">8</span></button>
-      <button class="category__btn">Front-end<span class="category__count">3</span></button>
-      <button class="category__btn">Back-end<span class="category__count">3</span></button>
-      <button class="category__btn">Mobile<span class="category__count">2</span></button>
+      <button class="category__btn active">1<span class="category__count">8</span></button>
+      <button class="category__btn">2<span class="category__count">3</span></button>
+      <button class="category__btn">3<span class="category__count">3</span></button>
+      <button class="category__btn">4<span class="category__count">2</span></button>
     </div>
   </section>  
 
@@ -154,49 +166,31 @@
         class="project__img"
         data-type="backend"
       >
-      <img src="imgs/projects/youtube.png" alt="Yotube">
+      <img src="imgs/projects/youtube.png"      alt="Yotube">
       <div class="project__description">
         <h3>Youtube Site</h3>
         <span>Clone coding with HTML and CSS</span>
       </div>
     </a>
     </div>
-  </section>
-
-  </body>
-  <!--Testimonials-->
-  <section id="testimonials">
-    <h1>Testimonial</h1>
-    <h3>See what they say about me</h3>
-    <div class="testimonials">
-      <div class="testimonial">
-        <img
-          src="imgs/testimonial/people1.jpg"
-          alt="people"
-          class="testimonial__avatar"
-        />
-      <div class="testimonial__speech-bubble">
-        <p>
-
-        </p>
-        <p class="name"></p>
-      </div>
     </div>
-  </div>
   </section>
+
   <!--Contact-->
-  <section id="contact">
-    <h1 class="contact__title">Let's talk</h1>
-    <h2 class="contact__email">rapgyung@gmail.com</h2>
-    <div class="contact__links">
-      <a href="https://github.com/G0907" target="_blank">
-        <i class="fab fa-github"></i>
-      </a>
-      <a href="#" target="_blank">
-        <i class="fa fa-linkedin-square"></i>
-      </a>
+  <section id="contact" class="section">
+    <div class="section__container">
+      <h1 class="contact__title">Let's talk</h1>
+      <h2 class="contact__email">rapgyung@gmail.com</h2>
+      <div class="contact__links">
+        <a href="https://github.com/G0907" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="#" target="_blank">
+          <i class="fa fa-linkedin-square"></i>
+        </a>
+      </div>
+      <p class="contact__rights">2021 Hoodie - All tights reserved</p>
     </div>
-    <p class="contact__rights">2021 Hoodie - All tights reserved</p>
   </section>
 </body>
 </html>
