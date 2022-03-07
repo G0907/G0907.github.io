@@ -8,12 +8,12 @@
   --color-dark-pink: #ff6863;
   --color-black: #4d4d4d;
   --color-dark-grey: #757575;
-  --color-grey: #616161;
-  --color-light-grey: #dcdcdc;
+  --color-grey: #424546;
+  --color-light-grey: #9ea7aa;
   --color-yellow: #fff7d1;
   --color-orange: #feb546;
   --color-black: #000000;
-  --color-blue: #90bbd8;
+  --color-blue: #8dafaf;
 
   /* Font size */
   --font-large: 48px;
@@ -110,6 +110,7 @@ p {
 
 .navbar__menu {
   display: flex;
+  color: white;
 
 }
 
@@ -132,12 +133,12 @@ p {
 
 .navbar__menu__item:hover {
   background-color: var(--color-blue);
-  border-radius: 4px;
+  border-radius: var(--size-border-radius);
 }
 
 .navbar__toggle-btn {
   position: absolute;
-  top: 38px;
+  top: 24px;
   right: 32px;
   font-size: 24px;
   color: var(--color-white);
@@ -146,10 +147,10 @@ p {
 
 /* Home */
 #home {
-  background: url('imgs/home-background.png') center/cover no-repeat;
+  background: url('imgs/home-background5.jpg') center/cover no-repeat;
   padding: 40px;
-  padding-top: 100px;
-  text-align: center;
+  padding-top: 500px;
+  text-align: right;
 }
 
 .home__avatar {
@@ -160,6 +161,7 @@ p {
 .home__title,
 .home__description {
   color: var(--color-white);
+  padding: 20px;
 }
 
 .home__contact {
@@ -180,8 +182,10 @@ p {
 }
 
 .section__container {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: auto;
+  line-height: 70px;
+  word-spacing: 2px;
 }
 
 /* About */
@@ -290,8 +294,15 @@ p {
 }
 
 .tools {
-  background-color: var(--color-grey);
+  background-color: var(--color-light-grey);
+  padding: 20px;
 }
+
+.etc {
+  background-color: var(--color-light-grey);
+  padding: 20px;
+}
+
 
 /* Work */
 
