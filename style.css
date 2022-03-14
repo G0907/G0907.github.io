@@ -131,8 +131,7 @@ p {
 }
 
 .navbar__menu__item:hover {
-  border-color: var(--color-white);
-  background-color: var(--color-dark-pink);
+  background-color: var(--color-dark-grey);
 }
 
 .navbar__toggle-btn {
@@ -334,13 +333,19 @@ p {
   top: -20px;
   left: 4px;
   opacity: 0;
-  transition: all var(--animation-duration) ease-in;
+  transition: all var(--animation-duration) ease-out;
 }
 
-.work__progects {
+.work__projects {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  opacity: 1;
+}
+
+.work__projects.anim-out {
+  opacity: 0;
+  transform: scale(0.9) translateY(40px);
 }
 
 .project {
@@ -352,6 +357,10 @@ p {
   height: 250px;
   margin: 2px;
   background-color: var(--color-light-white);
+}
+
+.project.invisble {
+  display: none;
 }
 
 .project__img {
