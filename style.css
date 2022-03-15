@@ -131,6 +131,7 @@ p {
 }
 
 .navbar__menu__item:hover {
+  border-color: var(--color-white);
   background-color: var(--color-dark-grey);
 }
 
@@ -315,7 +316,7 @@ p {
   padding: 8px 48px;
 }
 
-.category__btn.active,
+.category__btn.slected,
 .category__btn:hover {
   background-color: var(--color-blue);
   color: var(--color-white);

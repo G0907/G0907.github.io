@@ -48,6 +48,9 @@ document.addEventListener('scroll', () => {
   }
 });
 
+// Navbar toggle button for small screen
+const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
+
 // Handle click on the "arrow up" button
 arrowUp.addEventListener('click', () => {
   scrollIntoView('#home');
@@ -62,6 +65,14 @@ arrowUp.addEventListener('click', () => {
     if(filter == null ) {
       return;
     }
+
+    // Remove selection from the previous item and select the new one
+    const active = document.querySelector('.category__btn.selected');
+    active.classList.remove('selected');
+    const target =
+      e.target.nodeName === 'BUTTON' ? e.target : e.target.parentNode;
+      target.classList.add('selected');
+
     projectContainer.classList.add('anim-out');
     setTimeout(()=> {
       projects.forEach((project) => {
