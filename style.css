@@ -174,7 +174,7 @@ p {
 }
 
 .home__contact:hover {
-  background-color: var(--color-blue);
+  background-color: var(--color-dark-grey);
 }
 
 /* Section common */
@@ -204,8 +204,8 @@ p {
   line-height: 170px;
   font-size: 70px;
   margin: auto;
-  color: var(--color-blue);
-  border: 1px solid var(--color-blue);
+  color: var(--color-dark-grey);
+  border: 1px solid var(--color-dark-grey);
   border-radius: 50%;
   margin-bottom: 20px;
 }
@@ -285,7 +285,7 @@ p {
 
 .category__btn.selected,
 .category__btn:hover {
-  background-color: var(--color-blue);
+  background-color: var(--color-dark-grey);
   color: var(--color-white);
 }
 
@@ -395,7 +395,7 @@ p {
 
 /* Contact */
 #contact{
-  background-color: var(--color-blue);
+  background-color: var(--color-dark-grey);
 }
 
 .contact__title,
@@ -427,8 +427,8 @@ p {
   width: 70px;
   height: 50px;
   font-size: 50px;
-  color: var(--color-white);
-  background-color: var(--color-blue);
+  color: var(--color-dar-grey);
+  background-color: var(--color-light-white);
   border-radius: 10%;
   opacity: 0;
   pointer-events: none;
