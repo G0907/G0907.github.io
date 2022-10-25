@@ -252,27 +252,40 @@ p {
 }
 
 
+/* Skill */
+.skills {
+  background-color: var(--color-dark-grey);
+}
+
 
 /* Work */
 
-.work__categories {
+.work {
   margin: 40px;
-  font-size: var
+  font-size: var;
+  background-color: var(--color-black);
 }
 
-
-.section__container1_left{
-  width: 60%;
-  float: left;
+.wrap {
+  display: flex;
+  white-space:nowrap;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
-.section__container1_right{
-  width: 40%;
-  float: right;
+.work ::-webkit-scrollbar {
+  display:none;
 }
 
-.cleanme {
-  width: 600px;
+.section__container1{
+}
+
+.section__container2{
+}
+
+.slidepic {
+  width: 700px;
   height: 400px;
 }
 
