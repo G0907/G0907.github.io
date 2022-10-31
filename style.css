@@ -8,7 +8,7 @@
   --color-dark-pink: #ff6863;
   --color-black: #4d4d4d;
   --color-dark-grey: #232323;
-  --color-grey: #4e4e4e;
+  --color-grey: #585858;
   --color-light-grey: #9ea7aa;
   --color-yellow: #fff7d1;
   --color-orange: #feb546;
@@ -27,6 +27,7 @@
   --weight-semi-bold: 600;
   --weight-regular: 400;
 
+
   /* Size */
   --size-border-radius: 4px;
 
@@ -43,7 +44,10 @@ body {
   font-family: 'Lato', sans-serif;  
   margin: 0;
   cursor: default;
+  overscroll-behavior: none;
 }
+
+
 
 a {
   text-decoration: none;
@@ -174,7 +178,7 @@ p {
 }
 
 .home__contact:hover {
-  background-color: var(--color-dark-grey);
+  background-color: var(--color-grey);
 }
 
 /* Section common */
@@ -187,15 +191,29 @@ p {
 .section__container {
   max-width: 1000px;
   margin: auto;
-  line-height: 70px;
+  line-height: 80px;
   word-spacing: 2px;
 }
 
 /* About */
+
+
+
+/* Skills */
+
+#skills {
+  background-color: var(--color-dark-grey);
+  color: var(--color-white);
+  
+}
+
 .about__majors {
   display: flex;
   justify-content: space-between;
+  max-width: 1000px;
   margin: 80px 0;
+  line-height: 40px;
+  word-spacing: 2px;
 }
 
 .major__icon {
@@ -204,10 +222,9 @@ p {
   line-height: 170px;
   font-size: 70px;
   margin: auto;
-  color: var(--color-dark-grey);
-  border: 1px solid var(--color-dark-grey);
+  border: 2px solid var(--color-white);
   border-radius: 50%;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .major__icon i {
@@ -215,12 +232,12 @@ p {
 }
 
 .major__icon:hover i{
-  color: var(--color-pink);
+  color: var(--color-light-grey);
   transform: rotate(-20deg) scale(1.1);
 }
 .major__title, 
 .major__description {
-  color: var(--color-dark-grey);
+  color: white;
   justify-content: space-between;
 }
 
@@ -229,60 +246,13 @@ p {
 }
 
 
-.job {
-  display: flex;
-  align-items: center;
-}
-
-.job_description {
-  margin: 0 16px;
-  text-align: left;
-}
-
-.job__name,
-.job__period {
-  color: var(--color-light-grey);
-}
-.job__name {
-  font-size: var(--font-small);
-}
-
-.job__period {
-  font-size: var(--font-micro);
-}
 
 
-/* Skill */
-.skills {
-  background-color: var(--color-dark-grey);
-}
 
 
 /* Work */
 
-.work {
-  margin: 40px;
-  font-size: var;
-  background-color: var(--color-black);
-}
 
-.wrap {
-  display: flex;
-  white-space:nowrap;
-  overflow-x: scroll;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
-.work ::-webkit-scrollbar {
-  display:none;
-}
-
-.section__container1{
-}
-
-.section__container2{
-}
 
 .slidepic {
   width: 700px;
@@ -407,6 +377,7 @@ p {
   }
 
   .about__majors {
+    display: flex;
     flex-direction: column;
     margin-top: 30px;
     margin-bottom: 0px;

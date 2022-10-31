@@ -26,9 +26,11 @@
       <ul class="navbar__menu">
         <li class="navbar__menu__item active" data-link="#home">Home</li>
         <li class="navbar__menu__item" data-link="#about">About</li>
-        <li class="navbar__menu__item" data-link="#work">My Work</li>
+        <li class="navbar__menu__item" data-link="#skills">Skills</li>
+        <li class="navbar__menu__item" data-link="#projects">Projects</li>
         <li class="navbar__menu__item" data-link="#contact">Contact</li>
       </ul>
+
   <!-- Toggle button -->
     <button class="navbar__toggle-btn">
       <i class="fas fa-bars"></i>
@@ -38,17 +40,16 @@
   <!--Home-->
   <Section id="home">
     <div class="home__container">
-      <h1 class="home__title">Hello, <br />I'm Hoodie</h1>
+      <h1 class="home__title">Hello, <br/>I'm Hoodie</h1>
       <h2 class="home__description"></h2>
       <button class="home__contact" onclick="window.open('https://hoodiez.notion.site/78caabdbf51d4045a7d3e6484036f0f2')">RESUME</button>
     </div>
   </Section>
 
   <!--About-->
-  <section id="about">
-    <div class="section section__container">
+  <section id="about" class="section section__container">
       <img 
-        src="imgs/Photo_2022-09-10-02-08-34.jpeg" 
+        src="imgs/Photo_2022-09-10-02-08-34.jpeg"
         alt="Hoodie's profile" 
         class="home__avatar"
         />
@@ -59,27 +60,59 @@
         또한 사람들에게 각인되는 디자인에 대하여 고민합니다.</br>
         현재에 머무르지 않고, 지속적인 성장을 지향합니다.
       </p>
+  </section>
+  <section id="skills" class="section">
+      <div class="about__majors">
+        <div class="major">
+          <div class="major__icon">
+            <i class="fab fa-html5"></i>
+          </div>
+          <h2 class="major__title">Hard Skills</h2>
+          <p class="major__description">
+            HTML<br/>
+            CSS<br/>
+            JavaScript
+          </p>
+          </div>
+        <div class="major">
+          <div class="major__icon">
+            <i class="fab fa-brands fa-stack-exchange"></i>
+          </div>
+          <h2 class="major__title">Soft Skills</h2>
+          <p class="major__description">
+            책임감</br>
+            추진력</br>
+            협업능력</br>
+            트렌드파악</br>
+          </p>
+          </div>
+        <div class="major">
+          <div class="major__icon">
+            <i class="fab fa-figma"></i>
+          </div>
+          <h2 class="major__title">Tools</h2>
+          <p class="major__description">
+            FIGMA<br/>
+            Notion<br/>
+            Photoshop<br/>
+            Visula Studio Code<br/>
+            Github<br/>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
   <!--Skills-->
   <section id="skills" class="section">
     <div class="skills__container">
-        <img src="imgs/f1_figma.svg"/>
-        <img src="imgs/f2_ps.svg"/>
-        <img src="imgs/f3_html.svg"/>
-        <img src="imgs/f4_css.svg"/>
-        <img src="imgs/f5_js.svg"/>
-        <img src="imgs/f6_notion.svg"/>
-        <img src="imgs/f7_github.svg"/>
-        <img src="imgs/f8_vscode.svg"/>
+     
     </div>
   </section>
 
   <!--Work-->
-  <section id="work" class="section">
-    
-    <div class="wrap">
+  <section id="projects" class="section">
+    <div class="pin-wrap">
       <a 
         href="https://www.notion.so/hoodiez/APP-2c4ea57222f04188b7f184ec2bca2fea"
         target="_blank">
@@ -104,6 +137,7 @@
         class="slidepic"
         />
         </a>
+    </div>
   </section>  
 
     <div class="work__projects">
