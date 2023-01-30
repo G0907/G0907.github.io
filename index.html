@@ -93,6 +93,7 @@
           <h2 class="major__title">Tools</h2>
           <p class="major__description">
             FIGMA<br/>
+            Blender<br/>
             Notion<br/>
             Photoshop<br/>
             Visula Studio Code<br/>
@@ -130,13 +131,30 @@
         />
         </a>
         <a 
-        href="https://www.notion.so/hoodiez/APP-2c4ea57222f04188b7f184ec2bca2fea"
+        href="https://hoodiez.notion.site/APP-30220ce997d64c8bb64664e0b624162e"
         target="_blank">
       <img 
         src="imgs/projects/Slide 16_9 - 2.png"
         class="slidepic"
         />
         </a>
+        <script type="text/javascript" src="./instafeed.min.js"></script>
+
+<script type="text/javascript">
+const feed = new Instafeed({
+    accessToken: 'IGQVJXb04ycXdBZAWRsaEpvVTBhMFJuMktscFQ0TGpoUTlmQ3NQS1lwU0ZA6QVQzaUhuR2licno2SDJ5T0hkMU9RdXFzcjRwVTAyZAXNpVVBWS3M0aWVwQ1pjRGRjOGl2U3hlN0w0ZAkROei1qT01rbTM4RQZDZD',
+    target:'gallery',
+    template: '<li class="item">'+
+      '<a href="{{link}}">'+
+      '<img title="{{caption}}" src="{{image}}"/>'+
+	  '<h3>{{caption}}</h3>'+
+	  '<div>{{username}}</div>'+
+	  '</a>'+
+	  '</li>'
+});
+feed.run();
+
+</script>
     </div>
   </section>  
 
