@@ -119,8 +119,12 @@ arrowUp.addEventListener('click', () => {
     });
     projectContainer.classList.remove('anim-out');
       }, 300);
+    });
 
-  });
+    function scrollIntoView(selector) {
+      const scrollTo = document.querySelector(selector);
+      scrollTo.scrollIntoView({ behavior: 'smooth' });
+    }
 
 
 
