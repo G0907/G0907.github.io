@@ -17,7 +17,7 @@
 
   /* Font size */
   --font-large: 48px;
-  --font-medium: 28px;
+  --font-medium: 24px;
   --font-regular: 18px;
   --font-small: 16px;
   --font-micro: 14px;
@@ -77,7 +77,7 @@ h1 {
 h2 {
   font-size: var(--font-medium);
   font-weight: var(--weight-semi-bold);
-  color: var(--color-black);
+  color: var(--color-white);
   margin: 8px 0;
 }
 
@@ -304,7 +304,13 @@ p {
   transform: scale(1.1);
   color: var(--color-yellow);
 }
+.contact__email:hover {
+  color: var(--color-grey);
+}
 
+.contact__links {
+
+}
 
 /* Scroll */
 .arrow-up {
