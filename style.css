@@ -251,41 +251,17 @@ p {
 
 
 
-/* Work */
+/* Projects */
 
-
-.slidepic {
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
+.work_projects {
+  position: relative;
 }
 
-.slidepic .static {
 
+.project_img {
   width: 100%;
   height: 400px;
   object-fit: cover;
-}
-.slidepic .animated {
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
-  display: none
-}
-
-.slidepic:hover .animated {
-
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
-  display: inline
-}
-
-.slidepic:hover .static {
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
-  display: none
 }
 
 
@@ -328,6 +304,7 @@ p {
   transform: scale(1.1);
   color: var(--color-yellow);
 }
+
 
 /* Scroll */
 .arrow-up {
