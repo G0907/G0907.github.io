@@ -118,14 +118,11 @@ arrowUp.addEventListener('click', () => {
         }
     });
     projectContainer.classList.remove('anim-out');
-  }, 300);
-});
+      }, 300);
+
+  });
 
 
-function scrollIntoView(selector) {
-  const scrollTo = document.querySelector(selector);
-  scrollTo.scrollIntoView({ behavior: 'smooth' });
-}
 
 
 // 1. 모든 섹션 요소들을 가지고 온다.
